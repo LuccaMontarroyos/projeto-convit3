@@ -20,7 +20,7 @@ export class EventoPrisma {
       data: {
         ...convidado,
         qtdeAcompanhantes: +(convidado.qtdeAcompanhantes ?? 0),
-        evento: { connect: { id: evento.id } },
+        Evento: { connect: { id: evento.id } },
       },
     });
   }
@@ -54,7 +54,7 @@ export class EventoPrisma {
         imagemBackground: true,
         alias: true,
         senha: completo,
-        publicoEsperado: completo,
+        publicoesperado: completo,
         convidados: completo,
       },
       where: { alias },
