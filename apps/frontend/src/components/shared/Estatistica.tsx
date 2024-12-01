@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export interface EstatisticaProps {
   texto: string;
-  valor: number;
+  valor: any;
   imagem: string;
 }
 
